@@ -16,7 +16,7 @@ const upload = multer({ storage: storage });
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '/public/index.html'));
-});
+} );
 
 app.post('/analyze', upload.single('file'), (req, res) => {
   if (!req.file) {
