@@ -1,5 +1,5 @@
 function analyzeText(text) {
-    const wordCount = text.split(/\s+/).length;
+    const wordCount=text.split(/\s+/).length;
     const readingTime = Math.ceil(wordCount / 200);
     const vowelCount = (text.match(/[aeiou]/gi) || []).length;
     const charCount = text.length;
